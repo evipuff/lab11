@@ -17,6 +17,8 @@ try {
     $router->get('/courses/{course_code}', '\App\Controllers\CourseController@viewCourse');
     $router->get('/enrollment-form', '\App\Controllers\EnrolmentController@enrollmentForm');
     $router->post('/enroll', '\App\Controllers\EnrolmentController@enroll');
+    $router->get('/export-course/{course_code}', '\App\Controllers\CourseController@exportCourse');
+    
 
     // Run it!
     $router->run();
